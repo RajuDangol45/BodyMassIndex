@@ -20,7 +20,7 @@
         android:textSize="18sp"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:inputType="number"/>
+        android:inputType="number" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,17 +45,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:id="@+id/activity_main_compute_BMU_btn"
+        android:id="@+id/activity_main_compute_BMI_btn"
         android:text="@string/compute_BMI_command"
         android:layout_below="@id/activity_main_weight_text"
-        android:layout_margin="40dp"/>
+        android:layout_margin="40dp"
+        android:textAllCaps="false"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/BMI_value"
         android:id="@+id/activity_main_your_BMI"
-        android:layout_below="@id/activity_main_compute_BMU_btn"
+        android:layout_below="@id/activity_main_compute_BMI_btn"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"/>
 
@@ -67,6 +68,7 @@
         android:textSize="18sp"
         android:layout_margin="20dp"
         android:inputType="none"
-        android:editable="false"/>
+        android:editable="false"
+        android:gravity="center"/>
 
 </RelativeLayout>
