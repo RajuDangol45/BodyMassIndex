@@ -1,19 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/enter_height_command"
+        android:id="@+id/activity_main_enter_height"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_height_text"
+        android:layout_below="@id/activity_main_enter_height"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_weight_command"
+        android:id="@+id/activity_main_enter_weight"
+        android:layout_below="@id/activity_main_height_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_weight_text"
+        android:layout_below="@id/activity_main_enter_weight"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/activity_main_compute_BMU_btn"
+        android:text="@string/compute_BMI_command"
+        android:layout_below="@id/activity_main_weight_text"
+        android:layout_margin="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BMI_value"
+        android:id="@+id/activity_main_your_BMI"
+        android:layout_below="@id/activity_main_compute_BMU_btn"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_BMI_value"
+        android:layout_below="@id/activity_main_your_BMI"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:inputType="none"
+        android:editable="false"/>
+
+</RelativeLayout>

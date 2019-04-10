@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BodyMassIndex</string>
+    <string name="enter_weight_command">Please enter your weight</string>
+    <string name="enter_height_command">Please enter your height</string>
+    <string name="compute_BMI_command">Compute BMI</string>
+    <string name="BMI_value">Your BMI</string>
 </resources>
